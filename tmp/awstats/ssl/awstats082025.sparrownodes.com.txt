@@ -1,0 +1,281 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202508 will be lost/reset.
+# Last config file used to build this data file was /home/pfcbkjyc/tmp/awstats/ssl/awstats.sparrownodes.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2017                
+POS_TIME 2696                
+POS_VISITOR 6864                
+POS_DAY 7585                
+POS_DOMAIN 3312                
+POS_LOGIN 3609                
+POS_ROBOT 3764                
+POS_WORMS 4042                
+POS_EMAILSENDER 4173                
+POS_EMAILRECEIVER 4316                
+POS_SESSION 7688                
+POS_SIDER 7835                
+POS_FILETYPES 4451                
+POS_DOWNLOADS 4587                
+POS_OS 4635                
+POS_BROWSER 4771                
+POS_SCREENSIZE 5046                
+POS_UNKNOWNREFERER 5120                
+POS_UNKNOWNREFERERBROWSER 5363                
+POS_ORIGIN 5601                
+POS_SEREFERRALS 5734                
+POS_PAGEREFS 5914                
+POS_SEARCHWORDS 6062                
+POS_KEYWORDS 6214                
+POS_MISC 2359                
+POS_ERRORS 6273                
+POS_CLUSTER 3465                
+POS_SIDER_404 6385                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20250817223358 19 3745 14777555214217
+FirstTime 20250801000205
+LastTime 20250805130436
+LastUpdate 20250818083040 19 0 19 0 0
+TotalVisits 16                  
+TotalUnique 16                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 16                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavascriptDisabled 0 0 0
+DirectorSupport 0 0 0
+AddToFavourites 0 15 0
+RealPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 9 680806 0 3 3753
+1 0 0 0 0 0 0
+2 1 1 3755 34 35 425496
+3 0 0 0 1 2 2484
+4 1 6 626929 0 2 6905
+5 0 0 0 1 1 13716
+6 2 12 1253858 0 5 19464
+7 0 0 0 0 0 0
+8 2 12 1253858 0 4 9407
+9 0 0 0 3 4 4602
+10 0 0 0 0 0 0
+11 0 0 0 92 121 3072486
+12 1 1 3351 2 3 3744
+13 2 7 640645 1 4 9407
+14 1 6 626929 0 3 8156
+15 1 1 3755 0 1 5739
+16 1 6 626929 1 2 14967
+17 1 6 626929 0 2 6905
+18 0 0 0 0 0 0
+19 0 0 0 0 0 0
+20 0 0 0 1 1 13716
+21 1 6 626929 3 8 38090
+22 1 6 626929 6 22 1025817
+23 0 0 0 0 1 1251
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 6
+us 11 53 5076415
+se 2 7 630684
+ca 1 1 13716
+gb 1 6 626929
+in 1 6 626929
+ua 1 6 626929
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+bot[\s_+:,\.\;\/\\-] 155 4489174 20250817222645 0
+no_user_agent 4 41148 20250808164042 0
+crawl 3 41148 20250801214817 0
+java 2 0 20250801090729 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 4
+png 12 6657660 0 0
+css 24 218964 0 0
+js 26 656838 0 0
+html 17 68140 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 6
+ios_iphone 6 1
+win10 61 11
+macosx15 7 2
+linux 1 1
+Unknown 1 1
+win7 3 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 12
+firefox137.0 1 1
+chrome136.0.0.0 1 1
+chrome83.0.4103.61 3 1
+opera120.0.0.0 6 1
+firefox133.0 6 1
+chrome79.0.3945.79 6 1
+chrome105.0.0.0 1 1
+firefox109.0 6 1
+safari 6 1
+chrome138.0.0.0 36 6
+Unknown 1 1
+chrome100.0.4896.75 6 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+Hello_from_Palo_Alto_Networks,_find_out_more_about_our_scans_in_https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity 20250805130436
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+Hello_from_Palo_Alto_Networks,_find_out_more_about_our_scans_in_https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity 20250805130436
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 11 11
+From1 0 0
+From2 6 6
+From3 0 0
+From4 0 62
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+www_bing_com 5 5
+www_google_com 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+403 2 2484
+404 28 35028
+308 15 1442
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 5
+/feed.html 1 -
+/robots.txt 8 -
+/assets/js/'%20+%20this.getAttribute('href')%20+%20' 1 -
+/sitemaps.xml 2 -
+/kit.fontawesome.com/4eee35f757.js 16 https://sparrownodes.com/
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 16
+205.169.39.83 2 9 680806 20250801000210
+54.191.247.222 1 6 626929 20250801064835
+92.112.170.238 1 6 626929 20250801080752
+49.13.222.153 1 6 626929 20250801145646
+148.135.191.235 1 6 626929 20250801043352
+173.239.224.113 1 6 626929 20250801082643
+138.197.89.191 1 1 3351 20250801123858
+104.253.252.248 1 6 626929 20250801064741
+205.210.31.176 1 1 13716 20250805130436
+104.253.13.101 1 6 626929 20250801172441
+134.209.184.208 1 1 3755 20250801021246
+65.21.107.198 1 6 626929 20250801223326
+93.158.91.19 1 1 3755 20250801150216
+172.253.192.118 1 6 626929 20250801162847
+82.21.243.214 1 6 626929 20250801210509
+107.175.119.40 1 6 626929 20250801133529
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20250801 16 78 7587886 15
+20250805 1 1 13716 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 1
+0s-30s 16
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 1
+/ 17 68140 16 16
+END_SIDER

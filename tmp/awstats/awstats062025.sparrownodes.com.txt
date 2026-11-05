@@ -1,0 +1,709 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202506 will be lost/reset.
+# Last config file used to build this data file was /home/pfcbkjyc/tmp/awstats/awstats.sparrownodes.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2013                
+POS_TIME 2688                
+POS_VISITOR 12426               
+POS_DAY 18459               
+POS_DOMAIN 3442                
+POS_LOGIN 3860                
+POS_ROBOT 4015                
+POS_WORMS 4589                
+POS_EMAILSENDER 4720                
+POS_EMAILRECEIVER 4863                
+POS_SESSION 19177               
+POS_SIDER 19336               
+POS_FILETYPES 4998                
+POS_DOWNLOADS 5159                
+POS_OS 5207                
+POS_BROWSER 5452                
+POS_SCREENSIZE 6448                
+POS_UNKNOWNREFERER 6522                
+POS_UNKNOWNREFERERBROWSER 6987                
+POS_ORIGIN 7185                
+POS_SEREFERRALS 7321                
+POS_PAGEREFS 7465                
+POS_SEARCHWORDS 7646                
+POS_KEYWORDS 7798                
+POS_MISC 2351                
+POS_ERRORS 7857                
+POS_CLUSTER 3716                
+POS_SIDER_404 7948                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20250701005205 5 800 14042229314413
+FirstTime 20250601011029
+LastTime 20250630044047
+LastUpdate 20250701105730 5 0 4 0 0
+TotalVisits 160                 
+TotalUnique 155                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 155                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+QuickTimeSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 48 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 7 7 55830 11 21 1138338
+1 8 23 1918169 12 24 52202
+2 10 10 37550 16 28 62691
+3 10 10 37550 11 29 64677
+4 17 22 1127043 17 70 160515
+5 7 7 38697 25 55 305843
+6 4 9 637321 21 42 82124
+7 8 18 1282152 16 46 134070
+8 3 3 11265 16 33 60295
+9 10 25 1915718 17 32 43228
+10 16 31 2004198 18 31 67389
+11 15 40 3186605 17 40 67263
+12 5 5 18775 22 48 133774
+13 2 7 633566 19 47 86173
+14 2 2 7510 12 15 24508
+15 55 69 1382633 16 42 95005
+16 2 7 633566 13 18 27010
+17 1 1 3755 23 27 56995
+18 3 3 11265 14 17 29979
+19 6 6 32491 24 40 80203
+20 7 7 36246 11 22 39477
+21 3 3 11265 8 8 8759
+22 7 13 732388 10 21 82469
+23 4 4 15020 12 28 613733
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 15
+us 88 197 13988697
+de 33 33 2687
+jp 25 35 1375532
+cn 23 24 156789
+gb 8 8 39597
+ru 6 6 31187
+ca 5 5 11439
+se 4 4 15020
+nl 4 4 44565
+eg 4 4 41126
+zz 4 4 4016
+rs 3 3 41148
+be 3 3 11265
+bg 1 1 3755
+au 1 1 3755
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 12
+AhrefsBot/ 77 31073 20250618105912 0
+Googlebot/ 33 411348 20250630050509 0
+no_user_agent 22 301752 20250629181342 0
+bot[\s_+:,\.\;\/\\-] 17 63835 20250630163115 0
+360Spider 13 48815 20250629120650 0
+checker 10 37550 20250622135327 0
+bingbot/ 6 626929 20250625120357 0
+Applebot/ 5 1120875 20250629072028 0
+DotBot/ 2 27432 20250627174314 0
+Go\-http\-client/ 2 5499 20250618132416 0
+curl 2 27432 20250618131654 0
+baidu 2 54257 20250620221254 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+css 46 437115 0 0
+html 164 1215744 0 0
+png 23 12760515 0 0
+Unknown 48 3992 0 0
+js 51 1353212 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 14
+ios_iphone 80 55
+macosx15 12 7
+android 1 1
+macosx11 2 1
+macosx 1 1
+win8.1 3 3
+winxp 1 1
+android10 1 1
+win10 54 34
+Unknown 61 56
+macosx14 3 3
+linuxubuntu 3 3
+linux 102 42
+win7 8 4
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 48
+chrome113.0.0.0 7 2
+chrome103.0.5060.66 6 1
+chrome80.0.3987.162 1 1
+chrome83.0.4103.61 6 2
+firefox137.0 5 5
+firefox127.0 1 1
+chrome79.0.3945.79 12 2
+chrome91.0.4472.124 1 1
+firefox77.0 1 1
+chrome135.0.0.0 8 8
+chrome121.0.0.0 1 1
+msie6.0 1 1
+chrome104.0.0.0 3 3
+safari15.4 25 5
+chrome125.0.0.0 1 1
+iphone 6 1
+chrome95.0.4638.69 2 2
+safari13.0.3 49 49
+chrome124.0.0.0 3 3
+firefox136.0 3 3
+opera109.0.0.0 1 1
+chrome105.0.0.0 1 1
+Unknown 10 10
+chrome68.0.3440.106 72 12
+chrome117.0.5938.132 6 1
+firefox123.0 1 1
+chrome91.0.4472.114 1 1
+chrome77.0.3865.120 1 1
+netscape5.0 1 1
+chrome126.0.0.0 1 1
+chrome130.0.0.0 1 1
+chrome122.0.0.0 1 1
+firefox29.0 1 1
+safari14.1.1 1 1
+firefox134.0 3 3
+safari17.3.1 2 2
+chrome109.0.0.0 1 1
+chrome107.0.1035 1 1
+firefox115 1 1
+firefox123 1 1
+chrome41.0.2225.0 1 1
+chrome137.0.0.0 8 8
+mozilla 51 46
+chrome112.0.5615.136 1 1
+chrome76.0.3809.132 1 1
+chrome114.0.0.0 6 6
+chrome47.0.2526.106 2 1
+chrome66.0.3359.181 12 12
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 6
+Cpanel-HTTP-Client/1.0 20250619153528
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20250619154707
+Python/3.8_aiohttp/3.9.5 20250622195232
+Mozilla/5.0_(compatible;_Dataprovider.com) 20250615043336
+python-requests/2.27.1 20250615204542
+Mozilla/5.0_(compatible;_InternetMeasurement/1.0;__https://internet-measurement.com/) 20250605020252
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 3
+Cpanel-HTTP-Client/1.0 20250619153528
+Python/3.8_aiohttp/3.9.5 20250622195232
+python-requests/2.27.1 20250615204542
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 208 209
+From1 0 0
+From2 0 0
+From3 0 7
+From4 4 116
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+http://mail.sparrownodes.com 0 7
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+404 545 465372
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 182
+/restore/dump.sql 2 -
+/backups/public_html.gz 1 -
+/backups/backup.sql.tar 1 -
+/restore/public_html.zip 1 -
+/wp-admin/setup-config.php 76 -
+/feed.html 1 -
+/bak/bak.rar 1 -
+/backups/backup.sql 1 -
+/back/full_backup.zip 1 -
+/backup/sftp-config.json 1 -
+/web.zip 1 -
+/backups/config.json 2 -
+/humans.txt 1 -
+/start/about/index.html 1 -
+/backup/application.zip 1 -
+/start/docs/index.html 1 -
+/old/full_backup.zip 2 -
+/restore/bak.zip 3 -
+/old/bak.tar.gz 1 -
+/bak/backup.tar.gz 1 -
+/bak/mysql.sql 1 -
+/backup/directory.tar.gz 1 -
+/restore/website.tar.gz 1 -
+/old/application.zip 1 -
+/bak/www.tar 1 -
+/backup/backup.tar.gz 1 -
+/sftp-config.json 1 -
+/public_html.tar 1 -
+/backups/directory.gz 2 -
+/backup/config.json 1 -
+/sitemaps.xml 5 -
+/start/Sparrow.apk 3 -
+/archivarix.cms.php 1 http://sparrownodes.com/archivarix.cms.php
+/back/www.sql 1 -
+/restore/latest.zip 1 -
+/restore/bak.tar.gz 1 -
+/back/latest.zip 1 -
+/backups/public_html.tar 1 -
+/bak/website.gz 1 -
+/backup/config.js 1 -
+/old/backup.sql 3 -
+/public_html.rar 1 -
+/bak/Archive.zip 1 -
+/.well-known/security.txt 1 -
+/bak/application.zip 1 -
+/old/sftp-config.json 1 -
+/back/public_html.tar.gz 1 -
+/manager/ 2 -
+/backup/bak.tar.gz 1 -
+/admin/ 2 -
+/backups/directory.zip 1 -
+/wp-includes/js/jquery/jquery.js 13 -
+/backups/Archive.zip 3 -
+/restore/index.zip 1 -
+/start/features/index.html 1 -
+/back/config.json 1 -
+/public_html.zip 1 -
+/backup/public_html.tar.gz 3 -
+/bak/backup.sql 1 -
+/backups/website.tar 1 -
+//vendor/phpunit/phpunit/phpunit.xsd 2 -
+/bak/public_html.tar.gz 1 -
+/back/sql.sql 2 -
+/wordpress/wp-admin/setup-config.php 74 -
+/old/Archive.zip 3 -
+/back/bak.tar 1 -
+/old/www.zip 3 -
+/bak.zip 1 -
+/sitemap.xml 6 -
+/backup/full_backup.zip 1 -
+/sql.sql 1 -
+/back/directory.rar 1 -
+/old/bak.rar 1 -
+/wp-login.php 1 -
+/backup/website.tar.gz 1 -
+/backup/website.zip 1 -
+/kit.fontawesome.com/4eee35f757.js 51 http://www.sparrownodes.com/
+/restore/bak.rar 1 -
+/bak/directory.tar.gz 1 -
+/back/website.tar.gz 2 -
+/back/directory.gz 3 -
+/v1/models 1 -
+/backup/directory.gz 3 -
+/back/directory.tar 1 -
+/old/backup.tar.gz 1 -
+/backup/bak.gz 1 -
+/backup.zip 1 -
+/restore/backup.tar.gz 1 -
+/backups/bak.tar.gz 1 -
+/back/website.rar 1 -
+/old/website.tar.gz 1 -
+/sitemap.xml.gz 4 -
+/bak/backup.zip 1 -
+/bak/wallet.dat 1 -
+/wordpress/wp-login.php 1 -
+/simpla/ 2 -
+/old/www.sql 1 -
+/bak/directory.zip 2 -
+/restore/website.rar 1 -
+/backup.rar 1 -
+/backup/bak.rar 1 -
+/backups/www.tar.gz 1 -
+/backups/sql.sql 1 -
+/bak/sql.sql 1 -
+/backups/wallet.dat 1 -
+/bak/credentials.txt 1 -
+/wp-content/plugins/litespeed-cache/readme.txt 2 -
+/backups/credentials.txt 1 -
+/backups/website.tar.gz 1 -
+/start/feed.html 1 -
+/back/backup.sql.gz 1 -
+/restore/backup.zip 1 -
+/old/directory.rar 1 -
+/bak/bak.tar 1 -
+/administrator/ 2 -
+/bak/backup.tar 1 -
+/directory.tar.gz 1 -
+/back/bak.rar 1 -
+/bak/web.zip 1 -
+/backups/www.zip 1 -
+/back/backup.sql.tar 1 -
+/restore/config.json 2 -
+/bak/wallet.zip 1 -
+/old/www.tar.gz 1 -
+/backup/www.gz 1 -
+/application.zip 1 -
+/back/public_html.tar 1 -
+/backup/backup.gz 1 -
+/old/website.zip 1 -
+/robots.txt 79 -
+/backups/dump.sql 2 -
+/config.json 1 -
+/directory.tar 1 -
+/sitemap_index.xml 4 -
+/bak/bak.zip 1 -
+/old/backup.gz 1 -
+/old/backup.sql.gz 1 -
+/bak/config.js 1 -
+//wp-admin/install.php 1 www.google.com
+/backup.gz 1 -
+/site.zip 1 -
+/www.zip 1 -
+/old/wallet.zip 1 -
+/old/public_html.gz 1 -
+/back/backup.sql 1 -
+/js/mage/cookies.js 2 -
+/ads.txt 7 -
+//wp-admin/setup-config.php 1 www.google.com
+/security.txt 1 -
+/old/www.rar 1 -
+/restore/wallet.zip 1 -
+/404error_test.html 1 -
+/backups/bak.tar 2 -
+/about/function.php 1 -
+/llms.txt 1 -
+/bak/backup.rar 1 -
+/back/backup.rar 1 -
+/backup/backup.zip 1 -
+/old/bak.zip 1 -
+/latest.zip 1 -
+/credentials.txt 1 -
+/backups/www.tar 1 -
+/dump.sql 1 -
+/back/Archive.zip 1 -
+/bak/archive.zip 1 -
+/archive.zip 1 -
+/old/wallet.dat 1 -
+/website.gz 3 -
+/admin/content/sitetree/ 2 -
+/backup/website.tar 1 -
+/restore/website.tar 1 -
+/backup/www.tar 3 -
+/media/system/js/core.js 13 -
+/Archive.zip 1 -
+/old/credentials.txt 1 -
+/backup/backup.sql.tar 1 -
+/backup/backup.tar 1 -
+/old/bak.tar 1 -
+/backups/index.zip 1 -
+/bak/directory.rar 1 -
+/xmlrpc.php 1 -
+/sitemap.txt 3 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 155
+79.133.41.61 33 33 2687 20250619154707
+156.253.170.102 4 4 41126 20250616102052
+149.56.150.87 4 4 423031 20250615043317
+46.101.9.216 3 3 40810 20250601044127
+205.169.39.187 2 9 683688 20250619154758
+98.80.199.174 2 2 7510 20250607201414
+43.135.177.189 2 12 1259622 20250624225638
+205.169.39.69 2 9 683688 20250619154758
+57.129.137.193 2 2 7510 20250628114219
+47.129.134.222 2 2 174 20250619154707
+18.236.97.15 2 2 7510 20250615070136
+3.144.36.59 2 2 174 20250619154707
+54.213.240.218 2 12 1259622 20250615070203
+91.227.68.184 2 2 13716 20250628050837
+23.178.112.103 2 2 174 20250619154705
+35.181.160.41 2 2 7510 20250619155928
+113.141.91.58 2 2 7510 20250603092014
+182.42.105.144 2 2 7510 20250603123925
+185.159.130.18 2 2 13716 20250628050438
+43.130.3.122 2 2 7510 20250603055635
+35.90.165.217 2 2 174 20250619154707
+222.79.104.23 1 1 3755 20250601230414
+142.93.36.155 1 1 3755 20250623141840
+193.128.111.37 1 1 13716 20250620204955
+49.51.233.46 1 1 3755 20250602193746
+43.155.129.131 1 1 3755 20250601231355
+34.200.217.218 1 1 3755 20250606190004
+183.134.59.130 1 2 54257 20250620220110
+183.197.52.223 1 1 13716 20250620192139
+143.110.171.56 1 1 3755 20250609032643
+43.166.131.228 1 1 33300 20250602222310
+161.35.211.165 1 1 3755 20250623235458
+54.202.127.86 1 1 3755 20250619114157
+44.242.252.165 1 6 629811 20250617090938
+34.218.237.206 1 6 629811 20250607112551
+159.223.10.145 1 1 3755 20250626025648
+170.106.165.186 1 1 3755 20250605080210
+149.56.160.214 1 6 629811 20250615043335
+43.130.72.177 1 1 3755 20250604095023
+23.178.112.104 1 1 87 20250619154706
+142.93.237.38 1 1 3755 20250624034421
+132.232.203.74 1 1 3755 20250601104238
+124.225.206.172 1 1 3755 20250622195232
+165.22.235.205 1 1 3755 20250628023241
+13.62.58.9 1 1 87 20250619154705
+43.157.38.228 1 1 3755 20250603200140
+167.172.102.49 1 1 3755 20250622053401
+43.153.67.21 1 1 3755 20250602230253
+43.153.96.233 1 1 3755 20250603110206
+49.51.180.2 1 1 3755 20250601121145
+43.130.9.111 1 1 3755 20250602021332
+199.244.88.228 1 1 3755 20250614050144
+121.229.185.160 1 1 3755 20250601011029
+87.236.176.97 1 1 3755 20250605020252
+170.106.141.233 1 6 629811 20250614065523
+34.214.126.76 1 1 3755 20250611102033
+101.42.117.179 1 1 3755 20250601195736
+139.59.17.174 1 1 3755 20250614033906
+98.84.55.114 1 6 629811 20250615011133
+3.19.57.2 1 1 87 20250619154705
+3.19.242.240 1 1 3755 20250615204542
+52.43.101.99 1 1 3755 20250625093058
+114.96.103.33 1 1 3755 20250603000002
+142.93.253.33 1 1 3755 20250616032217
+91.227.68.183 1 1 0 20250626064259
+134.209.87.204 1 1 3755 20250622043202
+49.232.151.112 1 1 3755 20250601042153
+16.16.196.2 1 1 87 20250619154707
+52.42.109.87 1 1 3755 20250615103319
+44.244.235.218 1 1 3755 20250617090926
+43.130.110.130 1 1 3755 20250603124308
+43.166.129.247 1 1 3755 20250602213150
+43.155.140.157 1 1 3755 20250602003620
+93.158.90.74 1 1 3755 20250605005103
+161.35.47.198 1 1 3755 20250630044047
+205.169.39.29 1 6 629811 20250619160134
+143.110.210.121 1 1 3755 20250604035126
+114.80.36.40 1 1 3755 20250604103532
+159.203.160.157 1 1 3755 20250606035408
+43.130.57.76 1 1 3755 20250602224714
+182.44.67.97 1 1 3755 20250602083019
+170.106.197.109 1 1 3755 20250604014857
+101.91.148.219 1 1 3755 20250601165835
+34.71.84.124 1 1 3755 20250612071813
+100.24.98.120 1 1 3755 20250629002305
+170.106.163.84 1 1 3755 20250605014625
+54.189.132.60 1 6 629811 20250609100808
+163.172.179.57 1 1 3755 20250613125247
+170.106.193.108 1 1 3755 20250602193820
+16.16.143.197 1 1 87 20250619154706
+13.213.46.37 1 1 87 20250619154706
+43.153.85.46 1 1 3755 20250602221752
+141.138.213.100 1 1 3755 20250628060609
+140.143.98.18 1 1 3755 20250603030555
+161.35.180.216 1 1 3755 20250602032250
+43.135.145.117 1 1 3755 20250605031311
+134.209.88.18 1 1 3755 20250623093229
+8.219.245.229 1 1 3755 20250624122332
+91.231.89.125 1 1 13716 20250620100227
+44.249.147.206 1 1 3755 20250615015847
+170.39.218.62 1 1 3755 20250603210515
+35.87.168.2 1 6 629811 20250613091654
+44.232.183.15 1 6 629811 20250619114204
+132.232.144.200 1 1 3755 20250602175556
+143.198.8.250 1 1 3755 20250623022128
+44.245.4.24 1 6 629811 20250621111556
+34.29.203.2 1 1 3755 20250608042537
+18.237.226.38 1 6 629811 20250611102041
+125.94.144.102 1 1 3755 20250601072650
+43.143.248.236 1 1 3755 20250604005850
+44.248.222.118 1 1 3755 20250623110235
+3.80.160.39 1 6 629811 20250615011121
+43.130.47.33 1 1 3755 20250602042242
+46.101.79.43 1 1 3755 20250609224953
+167.71.182.172 1 1 3755 20250620023543
+54.212.153.161 1 6 629811 20250615103326
+164.52.24.178 1 1 13716 20250608103111
+106.75.49.194 1 1 3755 20250618132413
+135.148.195.16 1 1 3755 20250611074603
+209.97.181.135 1 1 3755 20250608115313
+49.51.252.146 1 1 3755 20250602021514
+54.191.79.52 1 6 629811 20250615015854
+35.93.157.160 1 1 3755 20250607112532
+24.199.92.15 1 1 3755 20250608025139
+192.36.166.94 1 1 3755 20250609000013
+43.130.150.80 1 1 3755 20250604183233
+159.203.24.34 1 1 3755 20250621154355
+43.134.141.244 1 1 3755 20250602220616
+91.231.89.127 1 1 13716 20250620101201
+39.154.25.131 1 1 13716 20250630015000
+104.248.27.219 1 1 3755 20250612032046
+44.244.247.105 1 1 3755 20250627113151
+43.130.32.245 1 1 3755 20250602040319
+35.87.165.27 1 6 629811 20250627113213
+35.81.82.38 1 6 629811 20250623110247
+43.156.202.34 1 1 3755 20250602090115
+141.138.208.43 1 1 3755 20250612154352
+109.199.118.129 1 1 3755 20250605023646
+93.158.90.32 1 1 3755 20250619205542
+54.211.144.170 1 1 3755 20250603140949
+94.191.43.82 1 1 3755 20250603061442
+170.106.140.110 1 1 33300 20250602005937
+51.91.218.19 1 1 3351 20250615043338
+43.166.245.120 1 1 3755 20250603181755
+35.85.224.211 1 1 3755 20250613091647
+167.99.224.146 1 1 3755 20250610020506
+192.36.109.83 1 1 3755 20250605073041
+91.231.89.35 1 1 13716 20250620100905
+54.188.48.56 1 1 3755 20250621111544
+159.203.162.216 1 1 3755 20250621084144
+43.153.12.58 1 1 3755 20250602214657
+34.212.108.124 1 1 3755 20250609100759
+49.51.178.45 1 1 3755 20250601042332
+44.243.77.86 1 1 87 20250619154705
+35.84.178.48 1 6 629811 20250625093110
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20250601 13 13 78360 11
+20250602 22 22 141700 22
+20250603 12 12 45060 12
+20250604 7 12 652341 7
+20250605 7 7 26285 7
+20250606 2 2 7510 2
+20250607 4 9 641076 3
+20250608 4 4 24981 4
+20250609 5 10 644831 5
+20250610 1 1 3755 1
+20250611 3 8 637321 3
+20250612 3 3 11265 3
+20250613 3 8 637321 3
+20250614 3 8 637321 3
+20250615 17 52 4853834 12
+20250616 5 5 44881 2
+20250617 2 7 633566 2
+20250618 1 1 3755 1
+20250619 58 82 2646010 20
+20250620 7 8 126592 7
+20250621 4 9 641076 4
+20250622 3 3 11265 3
+20250623 6 11 648586 6
+20250624 3 8 637321 3
+20250625 2 7 633566 2
+20250626 2 2 3755 2
+20250627 2 7 633566 2
+20250628 8 8 42452 5
+20250629 1 1 3755 1
+20250630 2 2 17471 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 2
+5mn-15mn 1
+0s-30s 159
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 18
+/ 159 702888 146 146
+/start/ 5 512856 2 2
+/.well-known/acme-challenge/tR7FLqnCv94a5gcRyKLP15B7aVPhTxzRFuJc5BES9Vk 5 435 0 0
+/.well-known/acme-challenge/ZkUsNgcWRSAhDi1mBFmFi71X4dtbZONxmhlcyDX3jrc 5 435 0 0
+/.well-known/acme-challenge/XCCX2Runu1txdekbw8T6C7kdAJX9o2wD2gMPY5W10sk 5 435 0 1
+/.well-known/acme-challenge/1T1TOuBxitDls_uN6JbS2VdtemKJpIfpM1vHhswrPyU 5 435 0 0
+/.well-known/acme-challenge/hyN-rj7P-T9bG-0sI40K_qhF-ow8f6OeRVax9sWEVNw 5 435 4 3
+/.well-known/acme-challenge/meZ2x_g_Bg_aYfnEE8b14VM_2GJ4m-GYjZKgE0U7DEI 5 435 2 5
+/.well-known/acme-challenge/uv3rf6YloBJXD2rt7Fky-UvtCg1_yBMA5dW2DH6R2q0 5 435 0 0
+/.well-known/acme-challenge/KpGil1SAaScJE8B2rFACjGaN0Cprc5s657gJZ2gw80o 5 435 5 3
+/.well-known/acme-challenge/AXQUX5ESO72133_SMKDSYR7UL8W58WHG 1 64 0 0
+/.well-known/acme-challenge/0LAHC7FBKXDITBP99TTHQ_KVVCAI161_ 1 64 1 0
+/.well-known/acme-challenge/LFH7IXHH47VI8FGPI42BUL1YIW81BAXD 1 64 0 0
+/.well-known/acme-challenge/8NJUFIGD6J5O1E78EMJZ7K64GIMJ_H4M 1 64 0 0
+/.well-known/acme-challenge/LM1Q2874N04TPQJLSN8ZH2X5PB8ILHXO 1 64 0 0
+/.well-known/acme-challenge/FWU07W9OZPWZOEOJKXUAZ8PYW376HFQZ 1 64 0 0
+/.well-known/acme-challenge/_W2JTXQ7VZWH7XBT8YHAPHM3RA118S5_ 1 64 0 0
+/.well-known/acme-challenge/0AOJIYT-PHTABVIURDQ00S6SOS87GMKU 1 64 0 0
+END_SIDER

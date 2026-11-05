@@ -1,0 +1,302 @@
+Return-Path: <amu5+bncBDJ27NPO6UDBB2H52PBQMGQE4DOIATI@inandgood.com>
+Delivered-To: pfcbkjyc@cp3.fra1.ultacp.com
+Received: from cp3.fra1.ultacp.com
+	by cp3.fra1.ultacp.com with LMTP
+	id wHSvOSH/dGhdmhEAlPscUw
+	(envelope-from <amu5+bncBDJ27NPO6UDBB2H52PBQMGQE4DOIATI@inandgood.com>)
+	for <pfcbkjyc@cp3.fra1.ultacp.com>; Mon, 14 Jul 2025 08:59:13 -0400
+Return-path: <amu5+bncBDJ27NPO6UDBB2H52PBQMGQE4DOIATI@inandgood.com>
+Envelope-to: info@sparrownodes.com
+Delivery-date: Mon, 14 Jul 2025 08:59:13 -0400
+Received: from mail-qv1-f72.google.com ([209.85.219.72]:56752)
+	by cp3.fra1.ultacp.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96.1)
+	(envelope-from <amu5+bncBDJ27NPO6UDBB2H52PBQMGQE4DOIATI@inandgood.com>)
+	id 1ubIm1-004scD-18
+	for info@sparrownodes.com;
+	Mon, 14 Jul 2025 08:59:13 -0400
+Received: by mail-qv1-f72.google.com with SMTP id 6a1803df08f44-6fb1be925fbsf65176476d6.1
+        for <info@sparrownodes.com>; Mon, 14 Jul 2025 05:58:52 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1752497911; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=bjudivuiQLyl2mJpZo+SbdwBR3lI0cNEBqo8ie950KqsXugzHRKcteKOHeSKzbpklt
+         10PNfAkpBiN6H/aG3OMOJNUW1lGFe/OgqTEJEUGc0bivbTqrOWCLftcWZLcDyY3SaosI
+         ImnQNUaXe/vgHiaoJ/bv0NqPUXGRrD9/QFtUQUy+dbl8sYtjod2+mJ1Q5yH7J3OybwE5
+         ooR8bH5BPlEMsl3XJCmyxy+yz8VEA+wZ3ocbbyUx+vgQ2eiiBZ6+pTUZcXRQZsm1+mTi
+         ibCd2mtp2VH3nzZs+1l1yLgyk0gRAo2Pp7sdBO+8xRoVX4v+FWHfhB58BW8dLwwYL+OI
+         Ppwg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=FUZuBGfFT2fdUaahuMWp+gNmjsrIxUobz5D+Ra57E60=;
+        fh=avaX2du5WZntDrx//c6Pzhh40XJrX9G7kH2lfGhjvhQ=;
+        b=kCL6EHZylQwR096Jg48BKYDB0iQtG31ozVKBaKSPMrmBA4Kf6zAp/WMNXW0WrGfWVX
+         OLxZvQuG9C7fssiWVml24wDuCpYUQm8rXuJtdBl1MquX0egCvR+cqnFX1SCJ3luK3bY/
+         T3yT1ugkTqqqMqA+UhcZ7Bd/c3u3Fn6saZeR28+DdTlLap7iOTBPvuKe+H5rbwpUTVqW
+         QD5PoIk672sqUIiMBWt3GEDXBoAQVxxz6UhNViZyT0G0FK19ozXJOTtX6NgkuRWqziY/
+         EKkjwdmtUxvgFcVxM0wEVoJhaVHuFXDrOOhmuENZaSBNXEf19z8q5ONEOYIjNNMrLIjY
+         i0xg==;
+        darn=sparrownodes.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=YhbvVhmA;
+       spf=pass (google.com: domain of am2014577@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=am2014577@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@inandgood.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=inandgood-com.20230601.gappssmtp.com; s=20230601; t=1752497911; x=1753102711; darn=sparrownodes.com;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=FUZuBGfFT2fdUaahuMWp+gNmjsrIxUobz5D+Ra57E60=;
+        b=V8zpHv/Igj6F1Y2LLB6GODQpwhfwSO7IF7oQbHGGfA/xg+A3ZPhStxjWMNInhfEuVh
+         Rs+Ax10zvJC3xLm/px+jLA+7NWh4Gm1+u7Cys9Vpl5tZHksHeFwsNR9I+DDedA7JgKxq
+         hfyMF1FvdZTqsAvmJxFGH8n0j/PFwqT4Fwpr00QWt/b72MSH44ITMs8+GR+16NIvlWLC
+         lFt/U0og57ZyM8Zhp4TcufE3jiIM+YkOiOhWZMwLSeE34prxeake2kA75GpdkayA8Gf1
+         CAAJhvtPg3K0guqkzlRu2DAC6v+OFLagP/maTdAvibgDWaCVJpezvp7kpS0DGA1ijsoi
+         +Cng==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1752497911; x=1753102711;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence
+         :x-original-authentication-results:x-original-sender:to:subject
+         :message-id:date:from:mime-version:x-beenthere:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=FUZuBGfFT2fdUaahuMWp+gNmjsrIxUobz5D+Ra57E60=;
+        b=H2yOql3EOAPmvJdkwCrC7KOj4Zt/sRoFlvVrlzma24BicHg4rS3KaKg8oCwWaip91X
+         N2JaFjWXGO7Gkf1xGU1X/4lde19AhleUUDplz+UVh3KIbZCooMEKZXoal+AE4Pu3lo/u
+         8drp9BH6uKAur6tPLPcH31/JwaxAUFWGDctkYLwUfHz2ofVzQbkyGO2ZkbV+VylfMOqz
+         rjRhKTFfm/PhAUlMBuwx2zFL8sVLEKloOkHBLEs8zFdIASHF0Sm57AYsl3IsUiYSt8B+
+         2tMVzc+d8NH7/AHp8zEH6oz6JkA/4vLFl7F9YNxcwZEgmpOJP+oiB+mA9PG7n7DxmBzA
+         Qb0Q==
+X-Forwarded-Encrypted: i=2; AJvYcCWEG0Xt97jMksjSXvVkY6ix5oqXO7F1e91rxjx2iV0Cxj/cBi1sEeqbzA0GURwzuTAsKpNA@sparrownodes.com
+X-Gm-Message-State: AOJu0YyvY3c1rh8stx6UYGgwuCekPbedWFfYWiX8zXqn3dqaEvUzsrB6
+	qoiwLuTFelnyILfG/V9JLxWgLyDg09hG1wKux/Yz+hLWI3gA+T/PGFaltyKQ7UEP0t8=
+X-Google-Smtp-Source: AGHT+IEbSRuqNORGGBEaoNEooP3pCLwVrwaA2CkJ+pk+u2hzmXCOGiBQkDN4XWE3JCn+7tT9OS9R0Q==
+X-Received: by 2002:ad4:5bea:0:b0:704:8524:ca2d with SMTP id 6a1803df08f44-704a4083babmr169436776d6.1.1752497910964;
+        Mon, 14 Jul 2025 05:58:30 -0700 (PDT)
+X-BeenThere: amu5@inandgood.com; h=AZMbMZfnH29uFFAQA+e6k1I/knPNBsZvd7n+xTK4wE3c5Qb3ZA==
+Received: by 2002:a05:6214:b68:b0:6fa:be7e:c0b6 with SMTP id
+ 6a1803df08f44-7049559f6c0ls74160376d6.0.-pod-prod-07-us; Mon, 14 Jul 2025
+ 05:58:15 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCVYtnJP277qOvHTHKX+y8LJfm4Pht+eBnMYdzXynHtx3ZHkC45seSE/V0pAaoxUzhZnwHRt@inandgood.com
+X-Received: by 2002:a05:6122:3d12:b0:534:6d9c:d544 with SMTP id 71dfb90a1353d-535f46ec9d2mr7518090e0c.3.1752497895448;
+        Mon, 14 Jul 2025 05:58:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1752497895; cv=none;
+        d=google.com; s=arc-20240605;
+        b=I1gCjNNAGVK3qrV8BodSpxFM05xlk6+wBI1DEH2jvav83cJ5JUXaX0wiIrgp4QOWok
+         MDSUakUShCDFfZOQO4/6OhAuU2E4ONHOC7wSJPk2Glz116hhwMA/07E7ag2UYMOit68p
+         U0XuPUn+uSV2XRzxOnNBzvXUfGhl3N9nTC5tHglpFLmLTnAulCUlap8iD6UpG1kXZDKf
+         ZG1XdtmWGhYkSDKxAzJM1n/sqx97B0kh26Zht4BSHdmvYvGHwYa/dnJr2XizZkk/ETA/
+         kvQCQEaoqFDSVjjGQree8v2gGtl6R6BIKjJ1kyy3tsTmOuSJK88hHupf9rtNmu7Tz/37
+         P7ig==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=FUZuBGfFT2fdUaahuMWp+gNmjsrIxUobz5D+Ra57E60=;
+        fh=Ua9lsEgYw+6VgPrFk9/EcVLon9TcnrkyvL+p3ymNjI8=;
+        b=NGUw2cqNDvwWRKuzpmkEi0/fOq3J5vfjgSA4VYSBzW8jMHDYv5lgsb6SEJ+oRaE1Wo
+         m/EDeQu7vpEizFm6fH+xNeDn45spIFphOFZrc/vWN3AlvGVV+jVNua+v3MVnaregnYAD
+         UtxFk46bVMpfrd3Av3JEqInfZzGJXTcEZyBLm32gStwsmhZDuq83Hdp++2DpP4NfJtA0
+         GEJgNX5pVFXQ8j7uhA7eAQfPQeV/StTjEVJt116Dl6S1lxrob7kAQtNWJODhSBdJzko+
+         h1/lZ+wy1rXYU9SFmAGz8ge1JOAhgKqKjlyWhDPbzuIouqJHtNKitn1wbuoRVyIprqlE
+         5L9A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=YhbvVhmA;
+       spf=pass (google.com: domain of am2014577@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=am2014577@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@inandgood.com
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id 71dfb90a1353d-535e736c692sor2136568e0c.8.2025.07.14.05.58.15
+        for <amu5@inandgood.com>
+        (Google Transport Security);
+        Mon, 14 Jul 2025 05:58:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of am2014577@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+X-Forwarded-Encrypted: i=1; AJvYcCWrh7IzW5yd4m8TU6OqLjJD5oBsSSzCjlUNvNz/jB+i4RIHGqa+eUXIettq+2IbIKEkEoB5@inandgood.com
+X-Gm-Gg: ASbGncv+M8YvWMTiRERw28F9Dz4G8WgBDDyp+EHyzUEP2gdiHIaA30QZRD7oHaJXTs5
+	eeQRj8YFYEjVRaGQuUbIWz4PjBZKvQ4E++qwmtcHEBpxm3lEiJ8txGshqyLDvETxLC+L2Jus2Ci
+	iyJK8nBvkAFXb+Vta21nSTddhEm2dBC0JFbfWQN1j3CLHTpwTuwHdD3RMjeOcBTGrUPoV+UDVUx
+	x2l0kZVpO6sQfvf
+X-Received: by 2002:a05:6122:1313:b0:535:caf8:1198 with SMTP id
+ 71dfb90a1353d-535f46c469bmr7754000e0c.2.1752497895100; Mon, 14 Jul 2025
+ 05:58:15 -0700 (PDT)
+MIME-Version: 1.0
+From: Aarohi mishra <am2014577@gmail.com>
+Date: Mon, 14 Jul 2025 05:58:03 -0700
+X-Gm-Features: Ac12FXzmIjuAX-LeksRI9PSrCXCfcdanIAuwiyfVFS8fK5M-tuA4MP9Qh6zyYF0
+Message-ID: <CAHkWUHVz7QeswYbjtOsx4DikZWgoj43aK-mH=CQGSb-duTJLog@mail.gmail.com>
+Subject: Professional Web Design Services and E-Commerce solutions
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="00000000000081d8c40639e33657"
+Bcc: amu5@inandgood.com
+X-Original-Sender: am2014577@gmail.com
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20230601 header.b=YhbvVhmA;       spf=pass
+ (google.com: domain of am2014577@gmail.com designates 209.85.220.65 as
+ permitted sender) smtp.mailfrom=am2014577@gmail.com;       dmarc=pass (p=NONE
+ sp=QUARANTINE dis=NONE) header.from=gmail.com;       dara=pass header.i=@inandgood.com
+Precedence: list
+Mailing-list: list amu5@inandgood.com; contact amu5+owners@inandgood.com
+List-ID: <amu5.inandgood.com>
+X-Spam-Checked-In-Group: amu5@inandgood.com
+X-Google-Group-Id: 970924317298
+List-Post: <https://groups.google.com/a/inandgood.com/group/amu5/post>, <mailto:amu5@inandgood.com>
+List-Help: <https://support.google.com/a/inandgood.com/bin/topic.py?topic=25838>,
+ <mailto:amu5+help@inandgood.com>
+List-Archive: <https://groups.google.com/a/inandgood.com/group/amu5/>
+List-Subscribe: <https://groups.google.com/a/inandgood.com/group/amu5/subscribe>,
+ <mailto:amu5+subscribe@inandgood.com>
+List-Unsubscribe: <mailto:googlegroups-manage+970924317298+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/a/inandgood.com/group/amu5/subscribe>
+X-Spam-Status: No, score=-0.7
+X-Spam-Score: -6
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "cp3.fra1.ultacp.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, I am Aarohi, a Web Development Manager in (India) and
+   I work with 100+experienced IT professionals who are into: *Website Designing,
+    Web Development, PHP development, e-Commerce solutions, SEO Services and
+   Content Writing, PPC Services.* 
+ Content analysis details:   (-0.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [209.85.219.72 listed in zen.spamhaus.org]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [am2014577[at]gmail.com]
+  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                              CUSTOM_MED
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [209.85.219.72 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [209.85.219.72 listed in bl.score.senderscore.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and
+                             EnvelopeFrom freemail headers are
+                             different
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+ -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
+                             manager
+X-Spam-Flag: NO
+
+--00000000000081d8c40639e33657
+Content-Type: text/plain; charset="UTF-8"
+
+Hi,
+
+I am Aarohi, a Web Development Manager in (India) and I work with
+100+experienced IT professionals who are into:
+
+*Website Designing, Web Development, PHP development, e-Commerce solutions,
+SEO Services and Content Writing, PPC Services.*
+
+May I know if you are interested in any of these services?
+
+If you are interested, then I can send you our past work details, company
+information and an affordable quotation with the best offer.
+
+Look at the Special offered Packages which can build your online
+recognition and increase your profit margins.
+
+You can give me your Skype id or Phone number to discuss more.
+
+Thanks & Regards,
+Aarohi
+
+--00000000000081d8c40639e33657
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><blockquote type=3D"cite" style=3D"color:rgb(38,40,42)"><d=
+iv dir=3D"ltr" style=3D"font-style:inherit;font-variant:inherit;font-weight=
+:inherit;font-stretch:inherit;line-height:inherit;font-size-adjust:inherit;=
+font-kerning:inherit;font-feature-settings:inherit;border:0px;margin:0px;pa=
+dding:0px;vertical-align:baseline;color:inherit"><blockquote type=3D"cite">=
+<div dir=3D"ltr" style=3D"font:inherit;border:0px;margin:0px;padding:0px;ve=
+rtical-align:baseline;color:inherit"><span style=3D"border:0px;font-style:i=
+nherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;font-s=
+ize:14.67px;line-height:inherit;font-family:Calibri,sans-serif;font-size-ad=
+just:inherit;font-kerning:inherit;font-feature-settings:inherit;margin:0px;=
+padding:0px;vertical-align:baseline">Hi, =C2=A0</span><br><span style=3D"bo=
+rder:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-s=
+tretch:inherit;font-size:14.67px;line-height:inherit;font-family:Calibri,sa=
+ns-serif;font-size-adjust:inherit;font-kerning:inherit;font-feature-setting=
+s:inherit;margin:0px;padding:0px;vertical-align:baseline">=C2=A0</span><br>=
+<span style=3D"border:0px;font-style:inherit;font-variant:inherit;font-weig=
+ht:inherit;font-stretch:inherit;font-size:14.67px;line-height:inherit;font-=
+family:Calibri,sans-serif;font-size-adjust:inherit;font-kerning:inherit;fon=
+t-feature-settings:inherit;margin:0px;padding:0px;vertical-align:baseline">=
+I am Aarohi, a Web Development Manager in (India) and I work with 100+exper=
+ienced IT professionals who are into:</span><br><span style=3D"border:0px;f=
+ont-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inh=
+erit;font-size:14.67px;line-height:inherit;font-family:Calibri,sans-serif;f=
+ont-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;=
+margin:0px;padding:0px;vertical-align:baseline">=C2=A0</span><br><span styl=
+e=3D"border:0px;font-style:inherit;font-variant:inherit;font-weight:inherit=
+;font-stretch:inherit;font-size:14.67px;line-height:inherit;font-family:Cal=
+ibri,sans-serif;font-size-adjust:inherit;font-kerning:inherit;font-feature-=
+settings:inherit;margin:0px;padding:0px;vertical-align:baseline"><strong>We=
+bsite Designing, Web Development, PHP development, e-Commerce solutions, SE=
+O Services and Content Writing, PPC Services.</strong></span><br><span styl=
+e=3D"border:0px;font-style:inherit;font-variant:inherit;font-weight:inherit=
+;font-stretch:inherit;font-size:14.67px;line-height:inherit;font-family:Cal=
+ibri,sans-serif;font-size-adjust:inherit;font-kerning:inherit;font-feature-=
+settings:inherit;margin:0px;padding:0px;vertical-align:baseline">=C2=A0</sp=
+an><br><span style=3D"border:0px;font-style:inherit;font-variant:inherit;fo=
+nt-weight:inherit;font-stretch:inherit;font-size:14.67px;line-height:inheri=
+t;font-family:Calibri,sans-serif;font-size-adjust:inherit;font-kerning:inhe=
+rit;font-feature-settings:inherit;margin:0px;padding:0px;vertical-align:bas=
+eline">May I know if you are interested in any of these services?</span><br=
+><span style=3D"border:0px;font-style:inherit;font-variant:inherit;font-wei=
+ght:inherit;font-stretch:inherit;font-size:14.67px;line-height:inherit;font=
+-family:Calibri,sans-serif;font-size-adjust:inherit;font-kerning:inherit;fo=
+nt-feature-settings:inherit;margin:0px;padding:0px;vertical-align:baseline"=
+>=C2=A0</span><br><span style=3D"border:0px;font-style:inherit;font-variant=
+:inherit;font-weight:inherit;font-stretch:inherit;font-size:14.67px;line-he=
+ight:inherit;font-family:Calibri,sans-serif;font-size-adjust:inherit;font-k=
+erning:inherit;font-feature-settings:inherit;margin:0px;padding:0px;vertica=
+l-align:baseline">If you are interested, then I can send you our past work =
+details, company information and an affordable quotation with the best offe=
+r.</span><br><br><span style=3D"border:0px;font-style:inherit;font-variant:=
+inherit;font-weight:inherit;font-stretch:inherit;font-size:14.67px;line-hei=
+ght:inherit;font-family:Calibri,sans-serif;font-size-adjust:inherit;font-ke=
+rning:inherit;font-feature-settings:inherit;margin:0px;padding:0px;vertical=
+-align:baseline">Look at the Special offered Packages which can build your =
+online recognition and increase your profit margins.</span><br><br><span st=
+yle=3D"border:0px;font-style:inherit;font-variant:inherit;font-weight:inher=
+it;font-stretch:inherit;font-size:14.67px;line-height:inherit;font-family:C=
+alibri,sans-serif;font-size-adjust:inherit;font-kerning:inherit;font-featur=
+e-settings:inherit;margin:0px;padding:0px;vertical-align:baseline">You can =
+give me your Skype id or Phone number to discuss more.</span><br><br><span =
+style=3D"border:0px;font-style:inherit;font-variant:inherit;font-weight:inh=
+erit;font-stretch:inherit;font-size:14.67px;line-height:inherit;font-family=
+:Calibri,sans-serif;font-size-adjust:inherit;font-kerning:inherit;font-feat=
+ure-settings:inherit;margin:0px;padding:0px;vertical-align:baseline">Thanks=
+ &amp; Regards,</span></div><div style=3D"font-style:inherit;font-variant:i=
+nherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-si=
+ze-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;border=
+:0px;margin:0px;padding:0px;vertical-align:baseline;color:inherit"><font fa=
+ce=3D"Calibri, sans-serif"><span style=3D"font-size:14.67px">Aarohi</span><=
+/font></div></blockquote></div></blockquote></div>
+
+--00000000000081d8c40639e33657--

